@@ -88,7 +88,7 @@ if __name__ == '__main__':
 
             string_cols = X.select_dtypes(include=["object"]).columns.tolist()
             if string_cols:
-                print(f"Dropping string columns in dataset {id}: {string_cols}")
+                logger.info(f"Dropping string columns in dataset {id}: {string_cols}")
                 X = X.drop(columns=string_cols)
             
             logger.info(f"{dataset.name} (id: {dataset.id})")
