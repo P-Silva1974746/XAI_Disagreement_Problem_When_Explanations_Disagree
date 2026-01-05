@@ -113,29 +113,6 @@ def aggregate_attributions(attributions, feature_groups):
     return agg, feature_names
 
 
-# def build_feature_groups(feature_names, colname):
-#     """
-#     Maps original feature to list of encoded feature indices
-#     """
-#     groups = defaultdict(list)
-
-#     for idx, name in enumerate(feature_names):
-#         # Remove transformer prefix (e.g., "num__", "cat__")
-#         clean = name.split("__", 1)[-1]
-
-#         # One-hot encoded feature
-#         original=""
-#         for c in colname:
-#             if clean in c:
-#                 original = clean
-#                 break
-#             else:
-#                 original = clean.split("_", 1)[0]
-
-
-#         groups[original].append(idx)
-
-#     return dict(groups)
 
 def build_feature_groups(feature_names, colname, categorical_mask):
     """
