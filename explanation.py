@@ -271,13 +271,6 @@ def to_long_df(values, features, model, explainer):
         columns=features
     )
 
-    df["run"] = np.arange(n_runs)
-    df = df.melt(
-        id_vars="run",
-        var_name="feature",
-        value_name="value"
-    )
-
     df["model"] = model
     df["explainer"] = explainer
     return df
