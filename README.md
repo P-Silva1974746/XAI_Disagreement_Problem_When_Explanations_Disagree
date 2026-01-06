@@ -32,3 +32,5 @@ To perform calulations of IG , run:
 ```bash
 python3 explanationIG.py
 ```
+### Disagreement
+To explore the metrics of (dis)agreement use the notebook: disagreement.ipynb
