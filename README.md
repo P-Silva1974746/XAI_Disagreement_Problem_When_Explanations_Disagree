@@ -16,13 +16,19 @@ Please make sure to activate the appropriate virtual environment before running 
 ---
 
 ## Usage
-
-### Hyperparameter Tuning
-To perform calulations SHAP an LIME, run:
-```bash
-python3 explanation.py
-
 ### Hyperparameter Tuning
 To perform hyperparameter tuning for the models, run:
 ```bash
+
 python3 hyperparameter_tunning.py
+```
+
+### Explanations
+To perform calulations of SHAP and LIME, run:
+```bash
+python3 explanation.py
+```
+To perform calulations of IG , run:
+```bash
+python3 explanationIG.py
+```
